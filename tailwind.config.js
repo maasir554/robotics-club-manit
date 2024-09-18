@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,9 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        
+      fontFamily:{
+        "rajdhani":["Rajdhani", ...defaultTheme.fontFamily.sans]
       },
+      colors: {
+        "headingcolor":"#DCCAFF",
+      },
+      // backgroundImage: {
+      //   'hero-pattern': "url('assets/herobg.png')",
+      // }
     },
   },
   plugins: [],
