@@ -10,7 +10,7 @@ const NAV_OPTIONS = [
   ];
 
 const MenuToggleButton = ({expanded, onClick}) => (
-    <button onClick={onClick} className={"px-10 py-3 flex bg-[rgba(240,240,240,.7)] hover:bg-white transition-colors active:scale-95 gap-3 items-center justify-center rounded-full"}>
+    <button onClick={onClick} className={"px-10 py-3 flex bg-[rgba(240,240,240,.7)] hover:bg-white transition-colors active:scale-95 gap-3 items-center justify-center rounded-full backdrop-blur-lg"}>
             <Image src={menuIcon} width={20} height={20} />
             <span className="text-xl text-[#3F2352]">{expanded?("close"):("menu")}</span>
     </button>

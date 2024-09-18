@@ -20,13 +20,13 @@ export const Hero = () => (
         </div>
         {/* Button Box */}
         <div className="w-full h-screen flex items-center justify-center p-5">
-            <div className="relative w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white/30 backdrop-blur-sm h-[150px] sm:h-[35vw] md:h-[22vw] lg:h-[18vw] rounded-xl md:rounded-3xl overflow-visible flex flex-row justify-end items-end">
+            <div className="relative w-[90vw] md:w-[80vw] lg:w-[70vw] bg-white/15  h-[150px] sm:h-[35vw] md:h-[22vw] lg:h-[18vw] rounded-xl md:rounded-3xl overflow-visible flex flex-row justify-end items-end">
                 <span className="absolute bottom-[100px] sm:bottom:12 md:bottom-8 left-4 text-[15vw] md:text-[10vw] text-[#B373FF] leading-[12vw] sm:leading-[12vw] md:leading-[8vw] font-bold">
                 <h1>DIVE</h1>
                 <h1>INTO</h1>
                 <h1>ROBOTICS</h1>
                 </span>
-            <a className="mr-6 mb-4 rounded-full bg-headingcolor text-black font-bold text-sm md:text-xl px-8 py-4 cursor-pointer border-4 border-transparent hover:border-[#B373FF]">
+            <a className="mr-6 mb-4 rounded-full bg-headingcolor text-black font-bold text-xs sm:text-sm md:text-xl px-6 md:px-8 py-2 md:py-4 cursor-pointer border-4 border-transparent hover:border-[#B373FF]">
                 REGISTER NOW 
             </a>
             </div>
