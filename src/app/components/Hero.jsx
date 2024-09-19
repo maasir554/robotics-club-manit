@@ -35,7 +35,7 @@ export const Hero = () => {
     <section id="hero-section" className="bg-[url('/herobg.png')] h-auto md:h-[200vh] bg-top bg-cover bg-no-repeat relative before:content-[''] before:h-full before:w-full before:bg-black before:flex before:-z-10 before:absolute before:top-0 bg-fixed">
         
         {/* Our Mascot Robot */}
-        <div id="robot-image" className=" max-w-[100px] md:max-w-[1000px] w-full sm:w-3/4 md:w-1/2 h-auto flex items-center justify-center fixed left-1/2 -translate-x-1/2 top-[100vh] -translate-y-[100%]"
+        <div id="robot-image" className=" max-w-[400px] md:max-w-[1000px] w-full sm:w-3/4 md:w-1/2 h-auto flex items-center justify-center fixed left-1/2 -translate-x-1/2 top-[100vh] -translate-y-[100%]"
              style={{
                 position:roboIsFixed?"fixed":"absolute",
                 bottom:roboIsFixed?"":"0",
