@@ -24,7 +24,7 @@ export const NavBar = () => {
     const handleMenuToggle = () => isNavExpanded? setIsNavExpanded(0) : setIsNavExpanded(1); 
 
     return(
-    <nav className={"fixed top-0 flex w-full justify-center items-center z-20 py-5 px-2 " }>
+    <nav className={"fixed top-0 flex w-full justify-center items-center z-50 py-5 px-2 " }>
         {!isNavExpanded?(
             <><MenuToggleButton expanded={isNavExpanded} onClick={handleMenuToggle} /></>
         ):(
