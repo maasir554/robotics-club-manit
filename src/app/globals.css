@@ -15,3 +15,51 @@ html, body{
 section{
     width: 100%;
 }
+
+#robot-image{
+    opacity: 0;
+    animation: fade-in-left 0.4s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-75%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+#hero-register{
+    animation-name: appear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    animation-timing-function: linear;
+}
+
+#hero-heading{
+    animation: hero-heading 0.5s ease-out forwards;
+}
+
+@keyframes appear {
+    0%{
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    70%{
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
+@keyframes hero-heading {
+    0%{
+        transform: translateY(120%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
