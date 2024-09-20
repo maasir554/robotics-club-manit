@@ -8,6 +8,10 @@
     background-image: url('../assets/herobg.png');
 } */
 
+html, body{
+    height: 100%;
+}
+
 section{
     width: 100%;
 }

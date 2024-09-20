@@ -15,6 +15,10 @@ module.exports = {
       colors: {
         "headingcolor":"#DCCAFF",
       },
+      backgroundSize:{
+        "landscape": "100% auto",
+        "portrait":"auto 100lvh"
+      }
       // backgroundImage: {
       //   'hero-pattern': "url('assets/herobg.png')",
       // }
