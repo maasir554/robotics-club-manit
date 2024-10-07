@@ -1,7 +1,6 @@
 "use client"
 
-import Image from "next/image";
-import { NavBar, Hero, About } from "./components";
+import { NavBar, Hero, About, PastEvents } from "./components";
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
       <NavBar/>
       <Hero/>
       <About/>
+      <PastEvents/>
     </div>
   );
 }

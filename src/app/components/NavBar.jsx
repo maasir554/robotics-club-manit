@@ -12,7 +12,7 @@ const NAV_OPTIONS = [
 const MenuToggleButton = ({expanded, onClick}) => (
     <button onClick={onClick} className={"px-4 sm:px-6 md:px-10 py-1 sm:py-2 md:py-3 flex bg-[rgba(240,240,240,.7)] hover:bg-white transition-colors active:opacity-90 gap-3 items-center justify-center rounded-full backdrop-blur-lg"}>
             <Image className="w-2 sm:w-3 md:w-4 lg:w-5" src={menuIcon} width={20} height={20} />
-            <span className="text-xs sm:text-sm md:text-lg lg:text-xl text-[#3F2352]">{expanded?("close"):("menu")}</span>
+            <span className="text-lg lg:text-xl text-[#3F2352]">{expanded?("close"):("menu")}</span>
     </button>
 );
 

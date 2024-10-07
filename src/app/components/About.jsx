@@ -2,8 +2,8 @@
 import Image from "next/image"
 
 export const About = () => (
-    <section className="w-screen min-h-screen h-full bg-black flex flex-col justify-center items-center ">
-        <div className="bg-[url('/herobg.png')] bg-cover w-full h-full p-10 pt-24 flex items-center justify-center flex-1">
+    <section className="w-screen min-h-screen h-full bg-gradient-to-b from-purple-950 to-black flex flex-col justify-center items-center ">
+        <div className="bg-[url('/herobg.png')] bg-fixed bg-bottom bg-cover w-full h-full p-10 pt-24 flex items-center justify-center flex-1">
             <article className="w-full max-w-6xl grid grid-cols-2 gap-14 content-center items-center ">
                 <div className="col-span-2 md:col-span-1">
                     <h1 className="text-center md:text-left text-6xl md:text-7xl lg:text-8xl text-headingcolor mb-20 font-bold ">

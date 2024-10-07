@@ -65,6 +65,14 @@ section{
     animation-delay: 150ms;
 }
 
+#past-events{
+    animation:past-evt-anim 15s linear infinite
+}
+
+#past-images{
+    animation: past-img-anim 10s linear infinite;
+}
+
 @keyframes about-1-anim { 
     0%{
         transform: translateX(-2.5%) rotate(0.5deg) ;
@@ -74,7 +82,7 @@ section{
     }
     100%{
         transform: translateX(-2.5%) rotate(0.5deg) ;
-    } 
+    }
 }
 
 @keyframes about-2-anim { 
@@ -115,5 +123,23 @@ section{
     }
     100%{
         transform: scaleX(1);
+    }
+}
+
+@keyframes past-evt-anim {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes past-img-anim {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
     }
 }
