@@ -48,6 +48,47 @@ section{
     animation: navbar-animation 0.25s ease forwards;
 }
 
+.about-1{
+    animation: about-1-anim 15s ease infinite;
+    animation-delay: 100ms;
+}
+.about-2{
+    animation: about-2-anim 14s ease infinite;
+    animation-delay: 200ms;
+}
+.about-4{
+    animation: about-1-anim 16s ease infinite;
+    animation-delay: 50ms;
+}
+.about-3{
+    animation: about-2-anim 13s ease infinite;
+    animation-delay: 150ms;
+}
+
+@keyframes about-1-anim { 
+    0%{
+        transform: translateX(-2.5%) rotate(0.5deg) ;
+    }
+    50%{
+        transform: translateX(2.5%) rotate(-0.5deg) ;
+    }
+    100%{
+        transform: translateX(-2.5%) rotate(0.5deg) ;
+    } 
+}
+
+@keyframes about-2-anim { 
+    0%{
+        transform: translateY(-2.5%) rotate(0.5deg) ;
+    }
+    50%{
+        transform: translateY(2.5%) rotate(-0.5deg) ;
+    }
+    100%{
+        transform: translateY(-2.5%) rotate(0.5deg) ;
+    }
+}
+
 @keyframes appear {
     0%{
         transform: translateX(-10%);
