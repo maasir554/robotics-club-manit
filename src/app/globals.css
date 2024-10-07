@@ -44,6 +44,10 @@ section{
     animation: hero-heading 0.5s ease-out forwards;
 }
 
+.navbar-animated{
+    animation: navbar-animation 0.25s ease forwards;
+}
+
 @keyframes appear {
     0%{
         transform: translateX(-10%);
@@ -61,5 +65,14 @@ section{
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+@keyframes navbar-animation {
+    0%{
+        transform: scaleX(0)
+    }
+    100%{
+        transform: scaleX(1);
     }
 }

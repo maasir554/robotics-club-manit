@@ -21,14 +21,14 @@ export const NavBar = () => {
     
     const [isNavExpanded, setIsNavExpanded] = useState(0);
     
-    const handleMenuToggle = () => isNavExpanded? setIsNavExpanded(0) : setIsNavExpanded(1); 
+    const handleMenuToggle = () => isNavExpanded ? setIsNavExpanded(0) : setIsNavExpanded(1); 
 
     return(
     <nav className={"fixed top-0 flex w-full justify-center items-center z-50 py-5 px-2 " }>
         {!isNavExpanded?(
             <><MenuToggleButton expanded={isNavExpanded} onClick={handleMenuToggle} /></>
         ):(
-        <div className="px-10 py-2 h-auto rounded-xl md:rounded-full bg-white w-full max-w-xl flex justify-evenly items-center flex-wrap gap-4">
+        <div className="px-10 py-2 h-auto rounded-xl md:rounded-full bg-white w-full max-w-xl flex justify-evenly items-center flex-wrap gap-4 navbar-animated">
             {NAV_OPTIONS.map((option,idx) => (
                 <a key={idx} className="text-xl text-[#3F2352] min-h-12 font-semibold flex items-center justify-center w-full md:w-auto text-center hover:underline" href={option.link}>{option.name}</a>
             ))}
